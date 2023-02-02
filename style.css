@@ -1,0 +1,20 @@
+h1 {
+    font-size: 70px;
+    color: black;
+    text-align: center;
+}
+
+#container {
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+
+}
+
+.column {
+    height: 25px;
+    width: 25px;
+    background-color: #D9D9D6;
+}
