@@ -38,13 +38,17 @@ button {
 }
 
 .eraser {
-    background-color: black;
+    background-color: bisque;
 }
 
+.black {
+    background-color: black;
+}
 #container {
     width: 500px;
     height: 500px;
     margin-bottom: 30px;
+    margin-left: 45px;
 }
 
 .row {
@@ -55,8 +59,15 @@ button {
     background-color: white;
 }
 
-.color {
-    background-color: black;
+#footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #E9E7E7;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
