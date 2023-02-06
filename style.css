@@ -1,20 +1,60 @@
+html {
+    background-color: #E9E7E7;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 h1 {
+    display: flex;
     font-size: 70px;
     color: black;
+    justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    border-color: #63666A;
+    border-width: 4px;
+}
+
+button {
+    padding: 15px 32px;
     text-align: center;
+    border-radius: 10px;  
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pixels {
+    background-color: #e6e6fa;
+}
+
+.rainbow {
+    background-color: #8fbc8f;
+}
+
+.eraser {
+    background-color: black;
 }
 
 #container {
+    width: 500px;
+    height: 500px;
+    margin-left: 410px;
+    margin-bottom: 40px;
 }
 
 .row {
     display: flex;
-    justify-content: center;
-
 }
 
 .column {
-    height: 25px;
-    width: 25px;
-    background-color: #D9D9D6;
+    background-color: white;
 }
+
+.color {
+    background-color: black;
+}
+
+
