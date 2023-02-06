@@ -46,16 +46,8 @@ function reset () {
     }
 }
 
-function erase () {
-    const erasing = document.querySelector('div');
-    erasing.addEventListener('mouseenter', () => {
-        erasing.classList.remove('color');
-    });
-}
-
-
 pixels.addEventListener('click', reset);
-eraser.addEventListener('click', erase);
+
 
 
 
