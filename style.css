@@ -37,6 +37,10 @@ button {
     background-color: #8fbc8f;
 }
 
+.clear {
+    background-color: darkblue;
+}
+
 .eraser {
     background-color: bisque;
 }
@@ -48,7 +52,7 @@ button {
     width: 500px;
     height: 500px;
     margin-bottom: 30px;
-    margin-left: 45px;
+    margin-left: 120px;
 }
 
 .row {

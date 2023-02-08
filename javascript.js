@@ -3,6 +3,7 @@ const pixels = document.querySelector('.pixels');
 const eraser = document.querySelector('.eraser');
 const rainbow = document.querySelector('.rainbow');
 const black = document.querySelector('.black');
+const clear = document.querySelector('.clear');
 
 let length = 16;
 let DIMENSIONS = 500;
@@ -46,7 +47,7 @@ function reset () {
     let size = prompt("What number of squares per side do you want? (Between 1 and 100)", "16");
     length = Number(size);
 
-    if (length > 100) {
+    if (length > 100 || length < 1) {
         alert('Invalid number')
         length = 16;
         grid();
@@ -93,10 +94,24 @@ function blackColor () {
     });
 }
 
+function cleared () {
+    const resetTwo = document.querySelectorAll('.row')
+    resetTwo.forEach((row) => {
+        container.removeChild(row);
+    });
+
+    const reset = document.querySelectorAll('.column');
+    reset.forEach((column) => {
+        column.removeAttribute('class')
+    });
+
+    grid();
+}
+
 pixels.addEventListener('click', reset);
 eraser.addEventListener('click', erase);
 rainbow.addEventListener('click', colors);
 black.addEventListener('click', blackColor);
-
+clear.addEventListener('click', cleared);
 
 
